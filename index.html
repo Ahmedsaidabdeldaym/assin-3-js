@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+       <div class=" home   container  ">
+            <div class="container  d-flex justify-content-center pt-4">
+                <h1>Bookmarker</h1>
+            </div>
+            <div class="container  d-flex justify-content-center pt-4">
+                <h2><i class="fa-solid fa-bookmark"></i>  Bookmark your favorite sites  <i class="fa-solid fa-bookmark"></i></h2>
+            </div>
+
+
+            <span><i class="fa-solid fa-book"></i>   <span class=" ps-2 h6 fw-bold fs-5">Site Name</span></span>
+
+            <div class="form-floating my-1">
+                <input oninput="validationName()" type="text" class="  form-control" id="bookmarkname" placeholder="">
+                <label for=" bookmarkname"> bookmark Name</label>
+                <p id="msgName" class="alert alert-danger d-none">Site name must contain at least 3 characters</p>
+            </div>
+
+            <span><i class="fa-solid fa-link"></i>  <span class=" ps-2 h6 fw-bold fs-5">Site URL</span></span>
+
+            <div class="form-floating my-1">
+                <input oninput="validationURL()" type="text" class="  form-control" id="websitURL" placeholder="">
+                <label for="websitURL "> Websit URL</label>
+                <p id="msgurl" class="alert alert-danger d-none">Site URL must be a valid one</p>
+            </div>
+            <div class="botom  text-center ">
+                <button onclick="addwebsit()" class="px-5 py-2 rounded text-white my-5">Submit</button>
+            </div>
+
+            <div>
+                <table class="table text-center">
+                  <thead>
+                    <tr>
+                      <th>Index</th>
+                      <th>uRL</th>
+                      <th>WebsiteName</th>
+                      <th>Visit</th>
+                      <th>Delete</th>
+                     
+                    </tr>
+                  </thead>
+          
+                  <tbody id="displayData">
+                    
+            
+                  </tbody>
+                </table>
+              </div>
+
+
+            
+       
+       </div>
+  
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

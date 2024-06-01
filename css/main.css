@@ -1,0 +1,35 @@
+
+body{
+    background-color: #F7ECDE;
+}
+
+.home h1{
+    font-family: "Pacifico", cursive;
+    background-color: hsl(37, 99%, 69%);
+    width: 22%;
+    text-align: center;
+    color: #352E28;
+    font-size: 50px;
+    font-weight: 500;
+    transition: all 0.5s;
+    
+  
+    
+}
+
+ .botom button{
+
+    background-color: #D1512D;
+    border: #D1512D solid 2px;
+
+ }
+
+ .botom button:hover{
+    background-color: #d1382d;
+    border: #d1382d solid 2px;
+ }
+ 
+ .home h2{
+background: linear-gradient( 270deg,  #3FA55B, #B1AB49);
+ }
+ 
